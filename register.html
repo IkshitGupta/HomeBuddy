@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register as a Service Provider - HomeBuddy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .register-container {
+      max-width: 700px;
+      margin: 4rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .register-container h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #005a87;
+    }
+
+    .register-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .register-form input,
+    .register-form select {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .register-form button {
+      background-color: #005a87;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .register-form button:hover {
+      background-color: #007bb5;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">HomeBuddy</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Join as Provider</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Provider Registration Form -->
+  <section class="register-container">
+    <h2>Join HomeBuddy as a Service Provider</h2>
+    <form class="register-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      
+      <select required>
+        <option value="">-- Select Your Service --</option>
+        <option>Plumber</option>
+        <option>Electrician</option>
+        <option>Carpenter</option>
+        <option>Cleaner</option>
+        <option>Painter</option>
+        <option>AC Mechanic</option>
+        <option>Gardener</option>
+        <option>Pest Control</option>
+        <option>Appliance Technician</option>
+      </select>
+
+      <input type="text" placeholder="City / Location" required>
+      <input type="number" placeholder="Years of Experience" min="0" required>
+      <input type="file" accept=".jpg,.jpeg,.png,.pdf" required>
+
+      <p class="note">Note: Upload a valid ID proof (PDF, JPG, PNG).</p>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HomeBuddy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

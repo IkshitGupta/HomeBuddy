@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - HomeBuddy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-container {
+      max-width: 800px;
+      margin: 4rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #005a87;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background-color: #005a87;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #007bb5;
+    }
+
+    .contact-details {
+      margin-top: 2rem;
+      text-align: center;
+      color: #333;
+    }
+
+    .contact-details p {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">HomeBuddy</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Join as Provider</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-container">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-details">
+      <h3>Get in Touch</h3>
+      <p>Email: support@homebuddy.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Address: 123, Home Service Lane, New Delhi, India</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HomeBuddy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

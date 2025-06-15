@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Service - HomeBuddy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .booking {
+      max-width: 600px;
+      margin: 4rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .booking h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #005a87;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      background-color: #005a87;
+      color: white;
+      padding: 0.9rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #007bb5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">HomeBuddy</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="book.html">Book Now</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Join as Provider</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Booking Form -->
+  <section class="booking">
+    <h2>Book a Home Service</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="e.g. 9876543210" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service">Select Service</label>
+        <select id="service" required>
+          <option value="">-- Choose a Service --</option>
+          <option>Plumbing</option>
+          <option>Electrician</option>
+          <option>Carpentry</option>
+          <option>Cleaning</option>
+          <option>Painting</option>
+          <option>AC Repair</option>
+          <option>Pest Control</option>
+          <option>Gardening</option>
+          <option>Appliance Repair</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="time">Preferred Time</label>
+        <input type="time" id="time" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Service Address</label>
+        <textarea id="address" rows="4" placeholder="Enter your full address" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HomeBuddy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
